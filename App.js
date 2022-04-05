@@ -1,5 +1,5 @@
 import React from "react";
-import { Text,View,StyleSheet, ScrollView } from "react-native";
+import { Text,View,StyleSheet, ScrollView,Image } from "react-native";
 
  export default function app  ()  {
      
@@ -25,8 +25,11 @@ import { Text,View,StyleSheet, ScrollView } from "react-native";
       height:900,
        alignItems:"center",
        justifyContent:"center"
-    
     },
+    Image:{
+      height:100,
+      width:300
+    }
 
   })
   
@@ -34,9 +37,12 @@ import { Text,View,StyleSheet, ScrollView } from "react-native";
      <>
       <ScrollView style={styles.container}>
           <View style={styles.container2}>
-              <Text style={styles.text1}>haha</Text>
+              <Text style={styles.text1}>hahha</Text>
               <Text style={styles.text2}>hi</Text>
               <Text style={styles.text3}>hij</Text>
+          <Image style={styles.Image} source={{
+            uri:"https://www.konexio.eu/uploads/1/2/0/2/120245745/konexio-logo_1.png"
+          }}/>
           </View>
       </ScrollView>
      </>
